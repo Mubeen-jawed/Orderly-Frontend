@@ -63,7 +63,7 @@ const CheckoutView = ({
                 type="text"
                 value={userDetails.fullName}
                 onChange={(e) => handleInputChange("fullName", e.target.value)}
-                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-${restaurantConfig.colors.primary} focus:border-transparent outline-none transition-all`}
+                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 ${restaurantConfig.colors.primaryRing} focus:border-transparent outline-none transition-all`}
                 placeholder="Enter your full name"
               />
             </div>
@@ -79,7 +79,7 @@ const CheckoutView = ({
                 onChange={(e) =>
                   handleInputChange("phoneNumber", e.target.value)
                 }
-                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-${restaurantConfig.colors.primary} focus:border-transparent outline-none transition-all`}
+                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 ${restaurantConfig.colors.primaryRing} focus:border-transparent outline-none transition-all`}
                 placeholder="Enter your phone number"
               />
             </div>
@@ -94,7 +94,7 @@ const CheckoutView = ({
                 onChange={(e) =>
                   handleInputChange("deliveryAddress", e.target.value)
                 }
-                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-${restaurantConfig.colors.primary} focus:border-transparent outline-none transition-all resize-none`}
+                className={`w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 ${restaurantConfig.colors.primaryRing} focus:border-transparent outline-none transition-all resize-none`}
                 rows="3"
                 placeholder="Enter your delivery address"
               />
@@ -156,7 +156,7 @@ const CheckoutView = ({
                         onClick={() =>
                           updateQuantity(parseInt(itemId), quantity + 1)
                         }
-                        className={`sm:w-6 sm:h-6 w-5 h-5 rounded-full bg-${restaurantConfig.colors.primary} flex items-center justify-center hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
+                        className={`sm:w-6 sm:h-6 w-5 h-5 rounded-full ${restaurantConfig.colors.primary} flex items-center justify-center ${restaurantConfig.colors.primaryHover} transition-colors`}
                       >
                         <Plus size={12} className="text-white" />
                       </button>
@@ -200,7 +200,7 @@ const CheckoutView = ({
             disabled={!isFormValid || isPlacingOrder}
             className={`w-full sm:py-4 py-2 rounded-xl font-semibold text-lg transition-all duration-200 ${
               isFormValid && !isPlacingOrder
-                ? `bg-${restaurantConfig.colors.success} hover:bg-green-600 text-white`
+                ? `${restaurantConfig.colors.success} hover:bg-green-600 text-white`
                 : "bg-gray-200 text-gray-400 cursor-not-allowed"
             }`}
           >

@@ -38,7 +38,7 @@ const ProductCard = ({ item, cart, addToCart, updateQuantity }) => {
             {!isInCart ? (
               <button
                 onClick={() => addToCart(item.id)}
-                className={`bg-${restaurantConfig.colors.primary} hover:bg-${restaurantConfig.colors.primaryHover} text-white sm:px-4 px-2 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center sm:gap-2 gap-1 sm:text-base text-xs`}
+                className={`${restaurantConfig.colors.primary} ${restaurantConfig.colors.primaryHover} text-white sm:px-4 px-2 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center sm:gap-2 gap-1 sm:text-base text-xs`}
               >
                 <Plus size={16} />
                 Add to Cart
@@ -56,7 +56,7 @@ const ProductCard = ({ item, cart, addToCart, updateQuantity }) => {
                 </span>
                 <button
                   onClick={() => updateQuantity(item.id, quantity + 1)}
-                  className={`sm:w-8 sm:h-8 w-6 h-6 rounded-full bg-${restaurantConfig.colors.primary} flex items-center justify-center hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
+                  className={`sm:w-8 sm:h-8 w-6 h-6 rounded-full ${restaurantConfig.colors.primary} flex items-center justify-center ${restaurantConfig.colors.primaryHover} transition-colors`}
                 >
                   <Plus size={14} className="text-white" />
                 </button>

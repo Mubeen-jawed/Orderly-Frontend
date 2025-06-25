@@ -91,7 +91,7 @@ const ShoppingCart = ({
                           onClick={() =>
                             updateQuantity(parseInt(itemId), quantity + 1)
                           }
-                          className={`w-6 h-6 rounded-full bg-${restaurantConfig.colors.primary} flex items-center justify-center hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
+                          className={`w-6 h-6 rounded-full ${restaurantConfig.colors.primary} flex items-center justify-center ${restaurantConfig.colors.primaryHover} transition-colors`}
                         >
                           <Plus size={12} className="text-white" />
                         </button>
@@ -127,7 +127,7 @@ const ShoppingCart = ({
               {/* Checkout Button */}
               <button
                 onClick={onCheckout}
-                className={`w-full mt-6 bg-${restaurantConfig.colors.primary} hover:bg-${restaurantConfig.colors.primaryHover} text-white py-3 rounded-xl font-semibold transition-colors duration-200`}
+                className={`w-full mt-6 ${restaurantConfig.colors.primary} ${restaurantConfig.colors.primaryHover} text-white py-3 rounded-xl font-semibold transition-colors duration-200`}
               >
                 Proceed to Checkout
               </button>

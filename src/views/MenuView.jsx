@@ -65,12 +65,12 @@ const MenuView = ({
           {/* Cart Icon */}
           <button
             onClick={() => setIsCartOpen(true)}
-            className={`relative p-2 bg-${restaurantConfig.colors.primary} text-white rounded-full hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
+            className={`relative p-2 ${restaurantConfig.colors.primary} text-white rounded-full ${restaurantConfig.colors.primaryHover} transition-colors`}
           >
             <ShoppingCart size={20} />
             {getTotalItems() > 0 && (
               <span
-                className={`absolute -top-2 -right-2 bg-${restaurantConfig.colors.danger} text-white text-xs rounded-full w-5 h-5 flex items-center justify-center`}
+                className={`absolute -top-2 -right-2 ${restaurantConfig.colors.danger} text-white text-xs rounded-full w-5 h-5 flex items-center justify-center`}
               >
                 {getTotalItems()}
               </span>
@@ -140,7 +140,7 @@ const MenuView = ({
           <div className="max-w-full mx-auto">
             <button
               onClick={() => setCurrentView("checkout")}
-              className={`w-full bg-${restaurantConfig.colors.primary} hover:bg-${restaurantConfig.colors.primaryHover} text-white sm:py-4 py-2 rounded-xl font-semibold text-base sm:text-lg transition-colors duration-200 flex items-center justify-center gap-3`}
+              className={`w-full ${restaurantConfig.colors.primary} ${restaurantConfig.colors.primaryHover} text-white sm:py-4 py-2 rounded-xl font-semibold text-base sm:text-lg transition-colors duration-200 flex items-center justify-center gap-3`}
             >
               <ShoppingCart size={20} />
               Proceed to Checkout ({getTotalItems()} items)

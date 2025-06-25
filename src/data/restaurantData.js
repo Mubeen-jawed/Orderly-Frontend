@@ -17,11 +17,12 @@ export const restaurantConfig = {
     platform: 15,
   },
   colors: {
-    primary: "orange-500",
-    primaryHover: "orange-600",
-    secondary: "gray-500",
-    success: "green-500",
-    danger: "red-500",
+    primary: "bg-orange-500", // keep this raw for semantic reference
+    primaryHover: "hover:bg-orange-600",
+    primaryRing: "focus:ring-orange-500",
+    secondary: "text-gray-500",
+    success: "text-green-500",
+    danger: "text-red-500",
   },
 };
 
@@ -52,7 +53,7 @@ export const foodItems = [
       "Mighty Zinger with 150G of Lean Chicken, Perfect for overloaded hunger.",
     price: 550,
     image:
-      "https://www.kfcpakistan.com/images/65428500-ea56-11ef-bf82-75f537a23a2b-Mighty_variant_0-2025-02-13220345.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaC_yiiWKd0Q0Nz5lgGwLhpxKUUfbTZl1esA&s",
     category: "burgers",
   },
   {

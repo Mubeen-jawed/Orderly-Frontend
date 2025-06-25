@@ -4,7 +4,7 @@ import { restaurantConfig } from "../data/restaurantData";
 const Footer = () => {
   return (
     <footer
-      className={`bg-${restaurantConfig.colors.primary} text-white py-8 mt-8`}
+      className={`${restaurantConfig.colors.primary} text-white py-8 mt-8`}
     >
       <div className="max-w-4xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

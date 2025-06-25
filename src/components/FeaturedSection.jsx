@@ -39,7 +39,7 @@ const FeaturedSection = ({ cart, addToCart, updateQuantity }) => {
                     {!cart[item.id] ? (
                       <button
                         onClick={() => addToCart(item.id)}
-                        className={`bg-${restaurantConfig.colors.primary} hover:bg-${restaurantConfig.colors.primaryHover} text-white px-3 py-1 rounded-lg font-medium text-xs transition-colors duration-200 flex items-center gap-1`}
+                        className={`${restaurantConfig.colors.primary} ${restaurantConfig.colors.primaryHover} text-white px-3 py-1 rounded-lg font-medium text-xs transition-colors duration-200 flex items-center gap-1`}
                       >
                         <Plus size={12} />
                         Add
@@ -61,7 +61,7 @@ const FeaturedSection = ({ cart, addToCart, updateQuantity }) => {
                           onClick={() =>
                             updateQuantity(item.id, cart[item.id] + 1)
                           }
-                          className={`w-6 h-6 rounded-full bg-${restaurantConfig.colors.primary} flex items-center justify-center hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
+                          className={`w-6 h-6 rounded-full ${restaurantConfig.colors.primary} flex items-center justify-center hover:bg-${restaurantConfig.colors.primaryHover} transition-colors`}
                         >
                           <Plus size={10} className="text-white" />
                         </button>
