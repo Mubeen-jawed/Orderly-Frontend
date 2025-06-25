@@ -200,7 +200,7 @@ const CheckoutView = ({
             disabled={!isFormValid || isPlacingOrder}
             className={`w-full sm:py-4 py-2 rounded-xl font-semibold text-lg transition-all duration-200 ${
               isFormValid && !isPlacingOrder
-                ? `${restaurantConfig.colors.success} hover:bg-green-600 text-white`
+                ? `${restaurantConfig.colors.success} bg-green-600 text-white`
                 : "bg-gray-200 text-gray-400 cursor-not-allowed"
             }`}
           >
