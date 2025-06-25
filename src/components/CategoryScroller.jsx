@@ -3,8 +3,8 @@ import { categories, restaurantConfig } from "../data/restaurantData";
 
 const CategoryScroller = ({ activeCategory, onCategoryClick }) => {
   return (
-    <div className="bg-white shadow-sm border-b border-gray-100 sticky top-16 z-10">
-      <div className="max-w-full mx-auto px-4 py-3">
+    <div className="bg-white overflow-x-hidden shadow-sm border-b border-gray-100 sticky top-16 z-10">
+      <div className="max-w-full mx-auto px-4 my-3">
         <div className="flex gap-4 overflow-x-auto scrollbar-hide">
           {categories.map((category) => (
             <button
